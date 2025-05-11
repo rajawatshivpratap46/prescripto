@@ -2,6 +2,7 @@ import React,{useContext,useEffect,useState} from 'react'
 import { useParams } from 'react-router-dom'
 
 import { AppContext } from '../context/AppContext'
+import {assets} from '../assets/assets_frontend/assets'
 
 const Appointment = () => {
 
@@ -21,9 +22,18 @@ const Appointment = () => {
   }, [doctors, docId])
 
 
-  return (
+  return docInfo && (
     <div>
-      
+      {/*---------------Doctors Details--------------*/}
+      <div>
+         <div>
+             <img src={docInfo.image} alt=""/>
+         </div>
+
+         <div>
+             
+         </div>
+      </div>
     </div>
   )
 }
