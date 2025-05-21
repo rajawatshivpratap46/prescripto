@@ -29,7 +29,17 @@ const Appointment = () => {
          <div>
              <img src={docInfo.image} alt=""/>
          </div>
-
+         <div>
+              {/*-------------Doc Info:name, degree,experience-------------*/}
+              <p>
+              {docInfo.name} 
+              <img src={assets.verified_icon} alt="" />
+              </p>
+              <div>
+                   <p>{docInfo.degree} - {docInfo.speciality}</p>
+                   <button>{docInfo.experience}</button>
+              </div>
+         </div>
          <div>
              
          </div>
