@@ -1,19 +1,26 @@
 import validator from "validator"
-import bycrypt from "bcrypt"
-import {v2 as cloudinary} from 'cloudinary'
+import bcrypt from "bcrypt"
+import {v2 as cloudinary} from "cloudinary"
 import doctorModel from "../models/doctorModel.js"
+import jwt from 'jsonwebtoken'
 // API for adding doctor
 const addDoctor= async (req,res)=>{
    
+   // ye mene chatgpt se liya hai
+   console.log("Received request!");
+   console.log("req.body:", req.body);
+   console.log("req.file:", req.file);
      try{
 
         const {name, email, password, speciality, degree, experience, about, fees, address} = req.body;
         const imageFile =req.file
 
+        // console.log(req.body)
+        console.log({name, email, password, speciality, degree, experience, about, fees, address},imageFile);
+
         // checking for all data to add doctor
         if(! name || !email || !password || !speciality || !degree || !experience || !about || !fees || !address){
-            return res.json({success:false,message:"Missing Details"})
-
+            return res.json({success:false,message:"Missing Details"})   
 
         }
 
@@ -28,20 +35,25 @@ const addDoctor= async (req,res)=>{
 
         }
 
+        // // isko mene chatgpt se liya hai, isse pehle mujhe nahi pata tha
+         if (!imageFile) {
+             return res.status(400).json({ success: false, message: "Image file is required" });
+          }
         // hashing doctor password
-        const salt = await bycrypt.genSalt(10)
-        const hashedPassword = await bycrypt.hash(password, salt)
+        const salt = await bcrypt.genSalt(10)
+        const hashedPassword = await bcrypt.hash(password, salt)
 
-        // upload image to cloudinary
-        const imageUpload = await cloudinary.uploader.upload(imageFile.path, {
-            resource_type: "image"})
-            const imageUrl = imageUpload.secure_url
+         // upload image to cloudinary
+         console.log("Uploading image to Cloudinary...");
+         const imageUpload = await cloudinary.uploader.upload(imageFile.path, {resource_type: "image"})
+         const imageUrl = imageUpload.secure_url
+         console.log("Image uploaded:", imageUrl );
 
-            const doctor = {
+            const doctorData = {
                 name,
                 email,
-                password: hashedPassword,
                 image: imageUrl,
+                password: hashedPassword,
                 speciality,
                 degree,
                 experience,
@@ -59,9 +71,27 @@ const addDoctor= async (req,res)=>{
 
         
      } catch(error){
-        console.error(error)
-        res.status(500).json({success:false, message:error.message})
+         console.error(error)
+         res.json({success:false, message:error.message})
      }
 }
 
-export { addDoctor }
+// API For admin Login
+const loginAdmin = async (req, res) => {
+    try{
+
+       const {email, password} = req.body
+       if(email== process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD ){
+            const token = jwt.sign(email+password,process.env.JWT_SECRET)
+            res.json({success:true,token})
+            
+       } else{
+         res.json({success:false, message:"Invalid credentials"})
+       }
+    } catch(error){
+      console.log(error)
+      res.json({success:false, message:error.message})
+    }
+}
+
+export { addDoctor, loginAdmin }
