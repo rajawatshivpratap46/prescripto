@@ -56,19 +56,35 @@ It demonstrates the implementation of a scalable MERN stack application with rol
 ## 📸 Screenshots  
 
 <h3>🏠 Homepage</h3>
-<p align="center">
+<!-- <p align="center">
   <img src="./assets/home.png" width="700"/>
-</p>
+</p> -->
+<img width="1906" height="918" alt="Prescripto_Homepage1" src="https://github.com/user-attachments/assets/110e9077-78c2-42ca-b0c7-1134187158bf" />
+
+<img width="1912" height="917" alt="Prescripto_Homepage2" src="https://github.com/user-attachments/assets/0c64ce30-1dca-4e3e-ae68-7ffe95a390bd" />
+
+<img width="1912" height="907" alt="Prescripto_Homepage3" src="https://github.com/user-attachments/assets/44bf6263-7d69-4428-9f32-8592e3097c7f" />
+
 
 <h3>📊 Dashboard</h3>
-<p align="center">
+<!-- <p align="center">
   <img src="./assets/dashboard.png" width="700"/>
-</p>
+</p> -->
+<img width="1907" height="912" alt="Prescripto_Dashboard1" src="https://github.com/user-attachments/assets/fe0d72eb-5cab-4a7d-8541-4b52f499b08d" />
+
+<img width="1911" height="912" alt="Prescripto_Dashboard2" src="https://github.com/user-attachments/assets/57b48a96-66bc-4b68-b434-e36daec35e35" />
+
+<img width="1907" height="911" alt="Prescripto_Dashboard3" src="https://github.com/user-attachments/assets/fbeb7f53-46f7-46c0-bd22-ebaf33c132bc" />
+
+<img width="1906" height="910" alt="Prescripto_Dashboard4" src="https://github.com/user-attachments/assets/f991bd55-9db0-44d4-8341-fa7aba67b16b" />
 
 <h3>📅 Booking Page</h3>
-<p align="center">
+<!-- <p align="center">
   <img src="./assets/booking.png" width="700"/>
-</p>
+</p> -->
+<img width="1905" height="915" alt="Prescripto_Appointment_Page" src="https://github.com/user-attachments/assets/cdd7d864-2683-48bb-8510-71e634e031bf" />
+
+<img width="1908" height="915" alt="Prescripto_Doctors_Page" src="https://github.com/user-attachments/assets/a9430269-1239-4e90-bae9-93c04cd8409a" />
 
 
 ## 🎥 Demo  
