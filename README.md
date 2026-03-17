@@ -2,6 +2,14 @@
 
 🚀 A full-stack web application that enables users to book doctor appointments online, manage schedules, and streamline healthcare interactions with secure authentication and real-time booking features.
 
+🚀 Live Demo  
+
+🔗 **Try the App Here:**  
+👉 https://your-live-demo-link.com  
+
+🎥 **Demo Video:**  
+👉 https://your-demo-video-link.com  
+
 🧠 Overview
 
 The Doctor Appointment Booking System is designed to simplify the process of scheduling medical appointments by providing a seamless and user-friendly platform for patients, doctors, and administrators.
