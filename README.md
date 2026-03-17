@@ -4,11 +4,18 @@
 
 🚀 Live Demo  
 
-🔗 **Try the App Here:**  
-👉 https://your-live-demo-link.com  
+🔗 **User Panel:**  
+👉 https://your-frontend-link.vercel.app  
+
+🔗 **Admin Panel:**  
+👉 https://your-admin-link.vercel.app  
+
+⚙️ **Backend API:**  
+👉 https://your-backend-link.onrender.com  
 
 🎥 **Demo Video:**  
 👉 https://your-demo-video-link.com  
+
 
 🧠 Overview
 
@@ -46,6 +53,29 @@ It demonstrates the implementation of a scalable MERN stack application with rol
 
     Works seamlessly across devices
 
+## 📸 Screenshots  
+
+<h3>🏠 Homepage</h3>
+<p align="center">
+  <img src="./assets/home.png" width="700"/>
+</p>
+
+<h3>📊 Dashboard</h3>
+<p align="center">
+  <img src="./assets/dashboard.png" width="700"/>
+</p>
+
+<h3>📅 Booking Page</h3>
+<p align="center">
+  <img src="./assets/booking.png" width="700"/>
+</p>
+
+
+## 🎥 Demo  
+
+![Demo](./assets/demo.gif)
+
+
 🛠️ Tech Stack
 
   👨‍💻 Frontend
@@ -64,14 +94,16 @@ It demonstrates the implementation of a scalable MERN stack application with rol
       
     🗄️ Database
       
-    MongoDB
+    MongoDB Atlas (Cloud Database)
+
+    ☁️ Cloud Services  
+    - Cloudinary (Image Storage)  
+    - Razorpay (Payment Gateway)
       
     🔗 Other Tools & Services
       
     REST APIs
-      
-    Stripe / PayPal (Payment Integration)
-      
+    
     Git & GitHub
 
 🧩 System Architecture
@@ -98,16 +130,6 @@ It demonstrates the implementation of a scalable MERN stack application with rol
     Appointment is confirmed and stored in database
     
     Doctors and users can manage appointments via dashboard
-
-📸 Screenshots
-
-(Add your UI screenshots here)
-
-![Home Page](./assets/home.png)
-![Doctor Dashboard](./assets/dashboard.png)
-![Booking Page](./assets/booking.png)
-🎥 Demo
-![Demo](./assets/demo.gif)
 
 
 📈 Concepts Demonstrated
@@ -140,56 +162,110 @@ Demonstrates real-world full-stack system design
     1️⃣ Clone Repository
     git clone https://github.com/your-username/doctor-appointment-system.git
     cd doctor-appointment-system
+    
     2️⃣ Install Dependencies
-    
-    Frontend:
-    
-    cd client
-    npm install
-    
-    Backend:
-    
-    cd server
-    npm install
-    3️⃣ Setup Environment Variables
-    
-    Create .env file in backend:
-    
-    MONGO_URI=your_mongodb_connection
-    JWT_SECRET=your_secret_key
-    STRIPE_KEY=your_payment_key
+        Backend
+            cd backend
+            npm install
+        Frontend
+            cd ../frontend
+            npm install
+        Admin Panel
+            cd ../admin
+            npm install
+            
+     3️⃣ Environment Variables
+     
+        📌 Backend .env
+            PORT=xxxx
+            MONGO_URI=your_mongodb_atlas_connection_string
+            JWT_SECRET=your_secret_key
+        
+            CLOUDINARY_NAME=your_cloudinary_name
+            CLOUDINARY_API_KEY=your_api_key
+            CLOUDINARY_SECRET_KEY=your_secret_key
+            
+            RAZORPAY_KEY_ID=your_key
+            RAZORPAY_KEY_SECRET=your_secret
+        
+        📌 Frontend .env
+            VITE_BACKEND_URL=http://localhost:xxxx
+            RAZORPAY_KEY_ID=your_key
+            
+        📌 Admin .env
+            VITE_BACKEND_URL=http://localhost:xxxx
+        
     4️⃣ Run Application
     
-    Backend:
-    
-    npm start
-    
-    Frontend:
-    
-    npm start
+        Start Backend
+            cd backend
+            npm run server
+            
+        Start Frontend
+            cd frontend
+            npm run dev
+            
+        Start Admin Panel
+            cd admin
+            npm run dev
+            
+🌐 Access the Application
 
-🌐 Open in Browser
-      http://localhost:3000/
+    User Panel → http://localhost:xxxx
+    
+    Admin Panel → http://localhost:xxxx
+    
+    Backend API → http://localhost:xxxx
+
+🚀 Deployment
+
+🌐 Platforms Used
+
+    Frontend & Admin: Vercel
+    
+    Backend: Render
+    
+    Database: MongoDB Atlas
+    
+    Image Storage: Cloudinary
+
+⚠️ Notes
+
+    Backend may take time to start (Render free tier)
+    
+    Ensure correct API URLs in frontend
+
+📈 Concepts Demonstrated
+
+    Full Stack Development (MERN)
+    
+    REST API Design
+    
+    Authentication & Authorization
+    
+    Database Design & CRUD Operations
+    
+    Payment Gateway Integration
+    
+    Cloud Services Integration
+
+🎯 Impact
+
+    Simplifies healthcare appointment booking
+    
+    Reduces manual scheduling
+    
+    Demonstrates real-world scalable system
 
 🚀 Future Enhancements
 
     📱 Mobile app integration
     
-    🤖 AI-based doctor recommendation system
+    🤖 AI-based doctor recommendation
     
     📊 Analytics dashboard
     
     📅 Calendar integration
-
-
-🏆 Highlights
-
-Developed a real-world healthcare system
-
-Implemented secure authentication and payment system
-
-Built scalable backend APIs and responsive UI
-
 
 👨‍💻 Author
 
@@ -198,4 +274,14 @@ Shivkumar Rajawat
 
 🔗 GitHub: https://github.com/your-username
 
-🔗 LinkedIn: https://linkedin.com/in/your-profile
+🔗 LinkedIn: https://www.linkedin.com/in/shiva-rajawat/
+
+📜 License
+
+This project is licensed under the MIT License.
+
+
+---
+
+
+
