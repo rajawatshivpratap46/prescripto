@@ -5,13 +5,13 @@
 🚀 Live Demo  
 
 🔗 **User Panel:**  
-👉 https://your-frontend-link.vercel.app  
+👉 https://prescripto-ashen.vercel.app/  
 
 🔗 **Admin Panel:**  
-👉 https://your-admin-link.vercel.app  
+👉 https://prescripto-n1hz.vercel.app/  
 
 ⚙️ **Backend API:**  
-👉 https://your-backend-link.onrender.com  
+👉 https://prescripto-7ms9.onrender.com  
 
 🎥 **Demo Video:**  
 👉 https://your-demo-video-link.com  
