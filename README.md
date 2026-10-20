@@ -175,21 +175,8 @@ Prescripto follows a MERN-stack architecture with separate frontend applications
 The application is organized into three primary services: frontend, admin, and backend.
 
 ```text
-Prescripto/
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   │
-│   ├── package.json
-│   └── vite.config.js
+
+prescripto/
 │
 ├── admin/
 │   ├── public/
@@ -199,21 +186,55 @@ Prescripto/
 │   │   ├── context/
 │   │   ├── pages/
 │   │   ├── App.jsx
+│   │   ├── index.css
 │   │   └── main.jsx
-│   │
-│   └── package.json
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.js
+│   └── vite.config.js
 │
 ├── backend/
 │   ├── config/
 │   ├── controllers/
-│   ├── middleware/
+│   ├── middlewares/
 │   ├── models/
 │   ├── routes/
-│   ├── server.js
-│   └── package.json
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
 │
-├── README.md
-└── .gitignore
+├── docs/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .env
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.js
+│   └── vite.config.js
+│
+├── LICENSE
+└── README.md
+
 ```
 
 ### Planned Project Structure
